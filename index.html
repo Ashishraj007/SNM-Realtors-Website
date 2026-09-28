@@ -508,7 +508,21 @@ footer {
 .footer-bottom p { font-size:.72rem; color:var(--muted); }
 .footer-badges { display:flex; gap:1.2rem; }
 .badge { font-family:var(--D); font-size:.58rem; letter-spacing:.14em; color:var(--muted); text-transform:uppercase; }
+.fenbrix-credit {
+  color: var(--gold);
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity .25s ease;
+}
 
+.fenbrix-credit:hover {
+  opacity: .75;
+}
+
+.footer-divider {
+  margin: 0 .35rem;
+  color: var(--border);
+}
 /* ─── WHATSAPP FLOAT ─────────────────── */
 .wa-float {
   position:fixed; bottom:1.8rem; right:1.8rem; z-index:950;
@@ -1195,7 +1209,14 @@ footer {
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2024 SNM Realtors. All Rights Reserved.</p>
+    <p>
+  © 2024 SNM Realtors. All Rights Reserved.
+  <span class="footer-divider">|</span>
+  Designed &amp; Developed by
+  <a href="https://www.fenbrix.in/" target="_blank" rel="noopener noreferrer" class="fenbrix-credit">
+    Fenbrix
+  </a>
+</p>
       <div class="footer-badges">
         <span class="badge">✦ Tier-1 Builder Recognised</span>
         <span class="badge">✦ RERA Compliant</span>
